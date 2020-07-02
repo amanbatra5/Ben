@@ -1,0 +1,51 @@
+
+
+%%[
+
+set @username = RequestParameter('username')
+set @password = RequestParameter('password')
+
+if RequestParameter("submitted") == "submitted" then
+
+if @username == "scholarship-user" and @password == "scholarship-pass" then
+
+Redirect("https://pub.s10.exacttarget.com/qajsj2sf3mq")
+
+
+endif
+]%%
+
+
+<script>
+
+  alert("Incorrect username or password!");
+</script>
+%%[
+endif
+
+]%%
+
+<h2>Login Form</h2>
+
+<form action="" method="post">
+  <div class="imgcontainer">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png (https://www.salesforceben.com/wp-content/uploads/2015/09/THEDRIP_banner_new-1.png)" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required="">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required="">
+        <input id="submitted" type="hidden" name="submitted" value="submitted">
+
+    <button type="submit">Login</button>
+   
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
