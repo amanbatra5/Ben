@@ -1,0 +1,15 @@
+
+
+%%[
+var @referrer
+set @referrer = HTTPRequestHeader("Referer")
+if @referrer == "https://pub.s10.exacttarget.com/tzbuzdds5h2" then
+]%%
+
+Login successfull
+
+
+%%[
+else
+    Redirect("https://pub.s10.exacttarget.com/tzbuzdds5h2")
+endif]%%
